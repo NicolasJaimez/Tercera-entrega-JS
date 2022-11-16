@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+main h1:hover {
+  text-decoration: underline;
+}
+
+.botonIngresar {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+.finalizarCompra {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+.cardProducto {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+.cardProducto:hover {
+  box-shadow: inset 0px 0px 15px 0px;
+}/*# sourceMappingURL=style.css.map */
