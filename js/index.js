@@ -37,20 +37,19 @@ botonesAgregar.forEach(boton => {
     boton.onclick = () => {
         const producto = productosArray.find(prod => prod.id === parseInt(boton.id))
 
-         const productoCarrito = {
+        const productoCarrito = {
             id: producto.id,
             nombre: producto.nombre,
             precio: producto.precio,
             cantidad: 1,
-        } 
-        
-        const {id, nombre,precio,cantidad} =productoCarrito
+        }
+        const { id, nombre, precio, cantidad } = productoCarrito 
 
-        const indexCarrito = carrito.findIndex(prod => prod.id === producto.id)
+        const indexCarrito = carrito.findIndex(prod => prod.id === id)
 
         indexCarrito === -1
-        ? carrito.push(productoCarrito)
-        : carrito[indexCarrito].cantidad += 1
+            ? carrito.push(productoCarrito)
+            : carrito[indexCarrito].cantidad += 1
     }
 })
 
